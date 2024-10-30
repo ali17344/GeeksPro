@@ -2,7 +2,7 @@ import './footer.css'
 import footerFon from '../img/footer.png'
 export const Footer = () => {
     return (
-        <div>
+        <div className='box'>
             <img src={footerFon} alt="" />
             <footer>
             <div className="container">
@@ -14,12 +14,12 @@ export const Footer = () => {
                     </div>
                     <div className="col-4">
                         <h3 className='footer-h3'>Категории</h3>
-                        <div>
+                        <div className='footer-btn-box'>
                             <button className='footer-btn'>часы</button>
                             <button className='footer-btn'>браслеты</button>
                             <button className='footer-btn'>ремни</button>
                         </div>
-                        <div>
+                        <div className='footer-btn-box'>
                             <button className='footer-btn2'>ювелирные изделия</button>
                             <button className='footer-btn2'>запонки</button>
                         </div>
