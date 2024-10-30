@@ -1,4 +1,4 @@
-@media (max-width:1024px){
+@media screen and (max-width:1024px){
     .box{
         max-width: 1000px;
         margin: 0 auto;
@@ -14,7 +14,7 @@
         padding-left: 250px;
     }
     .banner-brand-icon {
-        position: absolute;
+        position: fixed;
         width: 270px;
         height: 270px;
         margin-top: -400px;
@@ -36,7 +36,7 @@
         margin-top: 5px;
     }
     .banner-text{
-        margin-top: -120px;
+        margin-top: 10px;
     }
     .col-6{
         width: 100%;
@@ -49,7 +49,7 @@
         margin: 30px auto;
     }
     .col-6-2 {
-        position: absolute;
+        position: relative;
         width: 500.9px;
         margin-top: -300px;
         margin-left: 300.05px;
@@ -103,7 +103,7 @@
         margin: 2px auto 2px;
     }
 }
-@media (max-width:768px){
+@media screen and (max-width:768px){
     .box{
         max-width: 765px;
         margin: 0 auto;
@@ -204,7 +204,7 @@
         margin: -6px 4px 1px;
         padding: 5px 10px 5px 10px;
     }
-}@media (max-width:426px){
+}@media screen and (max-width:426px){
     .box{
         margin: 0 auto;
         max-width: 100%;
