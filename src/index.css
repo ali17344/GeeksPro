@@ -23,7 +23,9 @@ img{
 .row{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  gap: 20px;
 }
 .col-6{
   width: 50%;

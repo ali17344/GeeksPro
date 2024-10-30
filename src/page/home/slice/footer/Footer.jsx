@@ -6,6 +6,8 @@ export const Footer = () => {
             <img src={footerFon} alt="" />
             <footer>
             <div className="container">
+                <div className="row">
+
                     <div className="col-4">
                         <h3 className='footer-h3'>О магазине</h3>
                         <p className="footer-text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.</p>
@@ -26,6 +28,7 @@ export const Footer = () => {
                         <h3  className='footer-h3'>Рассылка</h3>
                         <p className="footer-text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.</p>
                     </div>
+                </div>
             </div>
             </footer>
         </div>
