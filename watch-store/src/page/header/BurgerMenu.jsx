@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './burgerMenu.scss';
 
-const BurgerMenu = ({showLogin,setShowLogin}) => {
+const BurgerMenu = ({showLogin,setShowLogin,setShowRegistration}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -19,7 +19,7 @@ const BurgerMenu = ({showLogin,setShowLogin}) => {
         <nav className={`menu ${isOpen ? 'open' : ''}`}>
           <ul>
             <li><a href="#">понравилось</a></li>
-            <li><a href="#" onClick={()=>{setShowLogin(!showLogin)}}>личный кабинет</a></li>
+            <li><a href="#" onClick={()=>{setShowLogin(!showLogin);setShowRegistration(false)}}>личный кабинет</a></li>
             <li><a href="#">настройки</a></li>
           </ul>
         </nav>

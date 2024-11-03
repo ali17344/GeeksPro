@@ -10,7 +10,6 @@ export const Header = () => {
   const [userName, setUserName] = useState('');
   const [userEmail, setUserEmail] = useState('');
   const [userPassword, setUserPassword] = useState('');
-  const [text, setText] = useState('');
   const [showRegistration, setShowRegistration] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
 
@@ -69,16 +68,16 @@ export const Header = () => {
               <a href='#'>Понравилось</a>
             </div>
             <div className="header-navLink-links">
-              <a href='#'  onClick={()=>{setShowLogin(!showLogin)}}>личный кабинет</a>
+              <a href='#'  onClick={()=>{setShowLogin(!showLogin);setShowRegistration(false)}}>личный кабинет</a>
             </div>
             <div className="header-navLink-links">
               <a href='#'>настройки</a>
             </div>
-            <BurgerMenu setShowLogin={setShowLogin} showLogin={showLogin} />
-            <a href="">
+            <BurgerMenu setShowRegistration={setShowRegistration} setShowLogin={setShowLogin} showLogin={showLogin} />
+            <a href="#">
               <img src={cartImg} alt="" className='header-navLink-img' />
             </a>
-            <a href="">
+            <a href="#">
               <img src={searchImg} alt="" className='header-navLink-img' />
             </a>
           </div>

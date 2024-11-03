@@ -107,6 +107,24 @@
     .burger-menu{
         display: inline-block;
     }
+    .check{
+        width: 30vw;
+        height: 40vw;
+        &-input{
+            margin: 3.5vw auto;
+            height: 5vw;
+            width: 28vw;
+            font-size: 3.5vw;
+        }
+        &-btn{
+            padding: 1vw;
+            width: 28vw;
+            font-size: 2vw;
+        }
+    }
+    .login{
+        height: 35vw;
+    }
     .header-navLink-links{
         display: none;
     }
