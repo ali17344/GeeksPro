@@ -51,12 +51,12 @@
     position: absolute;
     width: 18vw;
     height: 25vw;
-    top: 13vw;
-    background-color: #8e8e8ef4;
+    background-color: #8e8e8e4f;
     left: 50%;
     transform: translate(-50%,0);
     border-radius: 5%;
     background-image: url('../img/regis-removebg-preview.png');
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     &-input{
@@ -65,16 +65,16 @@
         width: 14vw;
         height: 2vw;
         border-radius: 2px;
-        background-color: #969696a4;
+        background-color: #96969644;
         border: none;
-        color: #0d0b0b;
+        color: #000000;
         font-size: 1.5vw;
     }
     &-btn{
         display: block;
         font-size: 1.25vw;
         width: 14vw;
-        background-color: #969696a4;
+        background-color: #96969644;
         border-radius: 3px;
         padding: 0.5vw;
         margin: 1vw auto;
