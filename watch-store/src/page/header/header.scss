@@ -47,3 +47,40 @@
         margin: 0 5px;
     }
 }
+.check{
+    position: absolute;
+    width: 18vw;
+    height: 25vw;
+    top: 13vw;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 5%;
+    background-color: #969696b3;
+    &-input{
+        display: block;
+        margin: 2vw auto;
+        width: 14vw;
+        height: 2vw;
+        border-radius: 2px;
+        background-color: #969696;
+        border: none;
+        color: #0F0F0F;
+        font-size: 1.5vw;
+    }
+    &-btn{
+        display: block;
+        font-size: 1.25vw;
+        width: 14vw;
+        background-color: #969696;
+        border-radius: 3px;
+        padding: 0.5vw;
+        margin: 1vw auto;
+    }
+    &-p{
+        text-align: center;
+        font-size: 1.2vw;
+    }
+}
+.login{
+    height: 20vw;
+}

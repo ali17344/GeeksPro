@@ -1,8 +1,8 @@
-// BurgerMenu.js
+
 import React, { useState } from 'react';
 import './burgerMenu.scss';
 
-const BurgerMenu = () => {
+const BurgerMenu = ({showLogin,setShowLogin}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,9 +18,9 @@ const BurgerMenu = () => {
         </div>
         <nav className={`menu ${isOpen ? 'open' : ''}`}>
           <ul>
-            <li><a href="">понравилось</a></li>
-            <li><a href="">личный кабинет</a></li>
-            <li><a href="">настройки</a></li>
+            <li><a href="#">понравилось</a></li>
+            <li><a href="#" onClick={()=>{setShowLogin(!showLogin)}}>личный кабинет</a></li>
+            <li><a href="#">настройки</a></li>
           </ul>
         </nav>
       </div>
