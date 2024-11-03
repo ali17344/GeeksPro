@@ -85,17 +85,22 @@ export const Header = () => {
       </div>
       {showRegistration && (
         <div className='check'>
-          <input type="text" className='check-input' placeholder="Имя пользователя" value={userName} onChange={(e) => setUserName(e.target.value)} />
-          <input type="email" className='check-input' placeholder="Email" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} />
-          <input type="password" className='check-input' placeholder="Пароль" value={userPassword} onChange={(e) => setUserPassword(e.target.value)} />
+            <p className="check-p">Name</p>
+          <input type="text" className='check-input'  value={userName} onChange={(e) => setUserName(e.target.value)} />
+          <p className="check-p">Email</p>
+          <input type="email" className='check-input'value={userEmail} onChange={(e) => setUserEmail(e.target.value)} />
+          <p className="check-p">Password</p>
+          <input type="password" className='check-input' value={userPassword} onChange={(e) => setUserPassword(e.target.value)} />
           <button className='check-btn' onClick={handleRegistration} >Зарегистрироваться</button>
           <button className='check-btn' onClick={()=>{setShowLogin(!showLogin); setShowRegistration(false);}}>Войти</button>
         </div>
       )}
       {showLogin && (
-        <div className='check login'>
-          <input type="text" className='check-input' placeholder="Имя пользователя" value={userName} onChange={(e) => setUserName(e.target.value)} />
-          <input type="password" className='check-input' placeholder="Пароль" value={userPassword} onChange={(e) => setUserPassword(e.target.value)} />
+          <div className='check login'>
+            <p className="check-p">Name</p>
+          <input type="text" className='check-input'  value={userName} onChange={(e) => setUserName(e.target.value)} />
+          <p className="check-p">Password</p>
+          <input type="password" className='check-input' value={userPassword} onChange={(e) => setUserPassword(e.target.value)} />
           <button className='check-btn' onClick={()=>{setShowRegistration(!showRegistration); setShowLogin(false);}}>Зарегистрироваться</button>
           <button className='check-btn' onClick={handleLogin}>Войти</button>
         </div>
