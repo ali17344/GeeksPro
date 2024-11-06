@@ -51,7 +51,7 @@
     position: absolute;
     width: 18vw;
     height: 25vw;
-    background-color: #8e8e8e88;
+    background-color: #8e8e8e;
     left: 50%;
     transform: translate(-50%,0);
     border-radius: 5%;
@@ -65,9 +65,9 @@
         width: 14vw;
         height: 2vw;
         border-radius: 2px;
-        background-color: #96969688;
+        background-color: #000000fa;
         border: none;
-        color: #000000;
+        color: #ffffff;
         font-size: 1.5vw;
     }
     &-btn{
@@ -75,10 +75,11 @@
         border:0.1px solid gray;
         font-size: 1.25vw;
         width: 14vw;
-        background-color: #9696967d;
+        background-color: #000000;
         border-radius: 3px;
         padding: 0.5vw;
         margin: 1vw auto;
+        color: white;
     }
     &-p{
         text-align: center;
